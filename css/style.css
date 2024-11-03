@@ -1,0 +1,152 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Barlow;
+    src: url("../fonts/Barlow-Thin.ttf");
+}
+
+/*Comienzo de la Sección Header*/
+
+
+.header__imagen{
+    max-width: 100px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Barlow;
+    font-size: 10px;
+    margin: 1rem;
+
+}
+
+.header__nav{
+    display: flex;
+    align-items: center;
+}
+
+.header__lista{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.header__linklista{
+    text-decoration: none;
+    color:  black;
+}
+
+.header__elementolista{
+    display: inline-block;
+    margin: 0rem 1.5rem 0rem 0rem;
+}
+
+.header__elementolista--negrita{
+    font-weight:bold;
+    margin: 0rem 1.5rem 0rem 0rem;
+}
+
+.menu__hamburguesa{
+    color: black;
+    font-size: 1rem;
+    margin: 0rem 1rem 0rem 0rem;
+}
+
+/* Fin de la Sección Header*/
+
+/* Comienzo de la Sección Prints*/
+
+.contenedor__prints{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+    margin: 0.8rem;
+    
+}
+
+
+.print__imagen{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   
+}
+
+.prints:nth-child(3){
+    grid-row-start: span 2;
+}
+
+.prints:nth-child(5){
+    grid-column-start: span 2;
+    grid-column-end: span 5;
+    grid-row-start: span 2;
+    grid-row-end: span 5;
+
+}
+
+.prints:nth-child(9){
+    grid-column-start: span 2;
+    grid-column-end: span 3;
+    grid-row-start: span 2;
+    grid-row-end: span 5;
+
+}
+
+.prints:nth-child(12){
+    grid-column-end: span 1;
+    grid-row-start: span 2 ;
+}
+
+
+.prints:nth-child(17){
+    grid-column-start: span 2;
+    grid-row-end: span 1;
+
+
+}
+
+
+/* Comienzo Sección Footer*/
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+    
+}
+
+.parrafo__footer{
+    font-family: Barlow;
+    line-height: 0.5;
+    font-size: smaller;
+    font-weight: 500;
+    text-align: center;
+  
+}
+
+.logo__footer{
+    display: flex;
+    justify-content: center;
+    width: 55%;
+    height: 55%;
+    margin: 1rem 0rem 0rem 0rem;
+    padding: 0rem 0rem 0rem 3rem;
+}
+
+.parrafo__derechos{
+    font-family: Barlow;
+    font-size: 12px;
+    font-weight: 500;
+    text-align: center;
+    margin: 5rem 0rem 0rem 2rem;
+
+}
