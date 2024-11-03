@@ -1,1 +1,1 @@
-![Portada del Proyecto] (./img/tareabem.png)
+![Portada del Proyecto] (img/tareabem.png)
